@@ -22,5 +22,18 @@ The code will look like the following:
  |:-----:|:-----:|:-----:|:-----:|
  | 3 | SQL Server 2012+ | PC, Server, Cloud Based Machine (e.g. Amazon) or Virtual Machine.The host machine should have at least: 2.2 GHz Core i5 processor or AMD equivalent. 8GB or 16GB of RAM, the higher the better. | Windows Server 2012 Virtual Machine can be VirtualBox or VMWare, but using Virtualbox will enable you to trial sample application machines available from Oracle. |
  | 5 | Windows 7, 8.1 or 10 | 2.2 GHz Core i5 processor or AMD equivalent. 8GB of RAM, but the higher the better. | 64 bit versions only.  Can also install on the same Server as the main OBIEE Server if its Windows Server 2012 or Windows Server 2016 Java JDK 1.8_77+ |
- | Wyoming | 20,000 | Wyoming | 20,000 |
- | Wyoming | 20,000 | Wyoming | 20,000 |
+ | 6-13 | Windows Edge 25+ Internet Explorer 11+ Google Chrome 50+ Firefox 45+ Apple Safari 9+ |  | Windows, Mac or Linux |
+ | 14 | Linux | PC, Server, Cloud Based Machine (e.g. Amazon) or Virtual Machine. 2.2 GHz Core i5 processor or AMD equivalent. 8GB of RAM, the higher the better. | Linux 6+, preferably Oracle Linux. |
+ 
+ ### Note:
+Chapter 01, 05, 07, 08, 09, 10, 12, 14, 15 ,16 and 17 does not contain code files.
+
+## Related Products:
+* [Oracle Enterprise Manager Cloud Control 12c: Managing Data Center Chaos](https://www.packtpub.com/virtualization-and-cloud/oracle-enterprise-manager-cloud-control-12c-managing-data-center-chaos?utm_source=github&utm_medium=repository&utm_content=9781849684781)
+
+* [Oracle Enterprise Manager 12c Administration Cookbook](https://www.packtpub.com/application-development/oracle-enterprise-manager-12c-administration-cookbook?utm_source=github&utm_medium=repository&utm_content=9781849687409)
+
+* [Oracle SOA Suite 12c Administrator's Guide](https://www.packtpub.com/application-development/oracle-soa-suite-12c-administrators-guide?utm_source=github&utm_medium=repository&utm_content=9781782170860)
+
+### Suggestions and Feedback
+[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
