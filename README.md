@@ -17,4 +17,5 @@ The code will look like the following:
                     from  
                          DimDepartmentGroup dg, 
                          
-                         
+ ### Software requirements:
+ | __Chapter number__ | Software required (With version) || __Hardware specifications__ | **OS required** |
