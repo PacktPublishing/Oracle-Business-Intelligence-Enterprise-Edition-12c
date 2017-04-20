@@ -18,4 +18,13 @@ The code will look like the following:
                          DimDepartmentGroup dg, 
                          
  ### Software requirements:
- | __Chapter number__ | Software required (With version) || __Hardware specifications__ | **OS required** |
+ | __Chapter number__ | **Software required (With version)** | __Hardware specifications__ | **OS required** |
+ | __3__ | **SQL Server 2012+** | __PC, Server, Cloud Based Machine (e.g. Amazon) or Virtual Machine.
+The host machine should have at least: 
+2.2 GHz Core i5 processor or AMD equivalent. 
+8GB or 16GB of RAM, the higher the better.
+__ | **Windows Server 2012
+Virtual Machine can be VirtualBox or VMWare, but using Virtualbox will enable you to trial sample application machines available from Oracle.
+** |
+ | __Chapter number__ | **Software required (With version)** | __Hardware specifications__ | **OS required** |
+ | __Chapter number__ | **Software required (With version)** | __Hardware specifications__ | **OS required** |
