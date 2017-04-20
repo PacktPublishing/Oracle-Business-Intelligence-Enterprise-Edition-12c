@@ -1,0 +1,12 @@
+
+C:\fmw_book\Oracle_home\oracle_common\common\bin\wlst.cmd
+
+listBIServiceInstances("C:/fmw_book/Oracle_home/user_projects/domains/bi")
+
+Output Directory .. C:/Dropbox/obiee_12c_book/system/obiee_book/bar
+
+Working Directory .. C:/book_wip
+
+exportServiceInstance(‘C:/fmw_book/Oracle_home/user_projects/domains/bi’,’ssi’,’C:/book_wip’,’C:/Dropbox/obiee_12c_book/system/obiee_book/bar’)
+
+exit()

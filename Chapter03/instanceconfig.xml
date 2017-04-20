@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Oracle Business Intelligence Presentation Services Configuration File --><WebConfig xmlns="oracle.bi.presentation.services/config/v1.1">
+    <ServerInstance>
+
+        <DSN>AnalyticsWeb</DSN>
+        <Logging>
+            <Writers>
+                <Writer dir="{%ORACLE_BIPS_INSTANCE_LOGDIR%}" filePrefix="sawlog" filesN="10" fmtName="ODL-Text" implementation="FileLogWriter" maxFileSizeKb="10240" name="Global File Logger" writerClassId="1"/>
+                <Writer implementation="CoutWriter" maxFileSizeKb="10240" name="Console Logger" writerClassId="2"/>
+                <Writer implementation="EventLogWriter" maxFileSizeKb="10240" name="System Event Logger" writerClassId="3"/>
+                <Writer dir="{%ORACLE_BIPS_INSTANCE_LOGDIR%}" disableCentralControl="true" filePrefix="webcatupgrade" filesN="1" fmtName="ODL-Text" implementation="FileLogWriter" maxFileSizeKb="2147483647" name="Webcat Upgrade Logger" writerClassId="5"/>
+            </Writers>
+
+            <WriterClassGroups>
+                <WriterClassGroup name="All">1,2,3,5,6</WriterClassGroup>
+                <WriterClassGroup name="File">1</WriterClassGroup>
+                <WriterClassGroup name="Console">2</WriterClassGroup>
+                <WriterClassGroup name="EventLog">3</WriterClassGroup>
+                <WriterClassGroup name="UpgradeLogFile">5</WriterClassGroup>
+            </WriterClassGroups>
+
+            <Filters>
+                <FilterRecord error="31" incident_error="1" information="1" path="saw" trace="0" warning="31" writerClassGroup="File"/>
+                <FilterRecord error="31" incident_error="1" information="1" path="saw.mktgsqlsubsystem.joblog" trace="0" warning="31" writerClassGroup="File"/>
+                <FilterRecord disableCentralControl="true" error="32" incident_error="32" information="1" path="saw.subsystem.catalog.initialize.upgrade" trace="1" warning="32" writerClassGroup="UpgradeLogFile"/>
+                <FilterRecord disableCentralControl="true" error="32" incident_error="32" information="1" path="saw.subsystem.catalog.upgrade" trace="1" warning="32" writerClassGroup="UpgradeLogFile"/>
+            </Filters>
+        </Logging>
+        <Views>
+            <Pivot>
+                <DefaultRowsDisplayedInDelivery>75</DefaultRowsDisplayedInDelivery>
+                <DefaultRowsDisplayedInDownload>2500</DefaultRowsDisplayedInDownload>
+                <DisableAutoPreview>false</DisableAutoPreview>
+            </Pivot>
+            <Table>
+                <DefaultRowsDisplayedInDelivery>75</DefaultRowsDisplayedInDelivery>
+                <DefaultRowsDisplayedInDownload>2500</DefaultRowsDisplayedInDownload>
+            </Table>
+        </Views>
+
+        <UI>
+			<DefaultSkin>Alta</DefaultSkin>
+			<DefaultStyle>Alta</DefaultStyle>
+			<SkinMappings>
+				<skinMapping>
+					<biadfSkinFamily>bi-alta</biadfSkinFamily>
+					<biSkin>AltaBitech</biSkin>
+				</skinMapping>
+			</SkinMappings>
+		</UI>
+
+        <Catalog>
+            <UpgradeAndExit>false</UpgradeAndExit>
+            <EnableMultiTenancy>false</EnableMultiTenancy>
+        </Catalog>
+
+        <!-- TODO - many of the following entries need removing once OBIPS uses the Endpoint API -->
+        <Listener port="9710" ssl="false"/>
+
+        <Alerts>
+            <ScheduleServer ssl="false">localhost:9705</ScheduleServer>
+            <OfflinePresentationServicesURL>http://10.232.18.95:9704/analytics/saw.dll</OfflinePresentationServicesURL>
+        </Alerts>
+        <ActionFramework>
+            <WorkflowServer>http://10.232.18.95:9704</WorkflowServer>
+            <WorkflowService>ANALYTICS</WorkflowService>
+            <WorkflowSystem>obiaftests</WorkflowSystem>
+        </ActionFramework>
+
+        <Security>
+            <ClientSessionExpireMinutes>210</ClientSessionExpireMinutes>
+        </Security>
+        <ODBC>
+            <ResultRowLimit>65000</ResultRowLimit>
+        </ODBC>
+
+        <Dashboard>
+            <ShowPageTabsAlways>false</ShowPageTabsAlways>
+            <ShowSectionHeadingsDefault>false</ShowSectionHeadingsDefault>
+            <CollapsibleSectionsDefault>true</CollapsibleSectionsDefault>
+        </Dashboard>
+        <BIComposer>
+            <Enabled>true</Enabled>
+        </BIComposer>
+        <DeploymentProfile>
+            <DeploymentMode>onsite</DeploymentMode>
+        </DeploymentProfile>
+        <AsyncLogon>
+            <NewLogonWaitSeconds>30</NewLogonWaitSeconds>
+            <NewSyncLogonWaitSeconds>900</NewSyncLogonWaitSeconds>
+        </AsyncLogon>
+        <Marketing>
+            <ContentServer>
+                <URL>http://localhost:8765</URL>
+            </ContentServer>
+        </Marketing>
+        <Authentication>
+            <EnabledSchemas>UidPwd,Impersonate,UidPwd-soap,Impersonate-soap</EnabledSchemas>
+        </Authentication>
+    </ServerInstance>
+</WebConfig>
