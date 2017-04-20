@@ -26,8 +26,6 @@ The host machine should have at least:
 8GB or 16GB of RAM, the higher the better. | Windows Server 2012
 Virtual Machine can be VirtualBox or VMWare, but using Virtualbox will enable you to trial sample application machines available from Oracle. |
  | 5 | Windows 7, 8.1 or 10 | 2.2 GHz Core i5 processor or AMD equivalent. 
-8GB of RAM, but the higher the better.
- | 64 bit versions only.  Can also install on the same Server as the main OBIEE Server if its Windows Server 2012 or Windows Server 2016
-Java JDK 1.8_77+ |
+8GB of RAM, but the higher the better. | 64 bit versions only.  Can also install on the same Server as the main OBIEE Server if its Windows Server 2012 or Windows Server 2016 Java JDK 1.8_77+ |
  | Wyoming | 20,000 | Wyoming | 20,000 |
  | Wyoming | 20,000 | Wyoming | 20,000 |
