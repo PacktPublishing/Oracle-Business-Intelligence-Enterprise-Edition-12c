@@ -26,7 +26,7 @@ The code will look like the following:
  | 14 | Linux | PC, Server, Cloud Based Machine (e.g. Amazon) or Virtual Machine. 2.2 GHz Core i5 processor or AMD equivalent. 8GB of RAM, the higher the better. | Linux 6+, preferably Oracle Linux. |
  
  ### Note:
-Chapter 01, 05, 07, 08, 09, 10, 12, 14, 15 ,16 and 17 does not contain code files.
+Chapter 01, 05, 07, 08, 09, 10, 12, 13, 15 ,16 and 17 does not contain code files.
 
 ## Related Products:
 * [Oracle Enterprise Manager Cloud Control 12c: Managing Data Center Chaos](https://www.packtpub.com/virtualization-and-cloud/oracle-enterprise-manager-cloud-control-12c-managing-data-center-chaos?utm_source=github&utm_medium=repository&utm_content=9781849684781)
