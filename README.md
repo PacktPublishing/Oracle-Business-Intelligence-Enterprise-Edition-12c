@@ -1,4 +1,4 @@
-# Learning PySpark
+# Oracle Business Intelligence Enterprise Edition 12c
 This is the code repository for [Oracle Business Intelligence Enterprise Edition 12c](https://www.packtpub.com/big-data-and-business-intelligence/oracle-business-intelligence-enterprise-edition-12c-second-editio?utm_source=github&utm_medium=repository&utm_content=9781786464712), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
 
 ## About the book
